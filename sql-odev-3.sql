@@ -23,7 +23,7 @@ WHERE  (title ~~* '%___T%') OR ( title ~~*'%T___%') OR ( title ~~*'%_T__%') OR (
 
 SELECT title
 FROM film
-WHERE LOWER(title) ~~* '%t%' AND LENGTH(title) >= 4;
+WHERE title ~~* '%t%' AND LENGTH(title) >= 4;
 -- LENGTH() fonksiyonu hücredeki stringin karakter sayısını döner, String.length() gibi
 
 -----------------------------------------------
